@@ -1,4 +1,4 @@
-rapier
-======
+popGen-lib
+==========
 
-Prototype pipeline for RADtag sequencing analysis 
+Common library of useful stuff for population genetics analysis.
