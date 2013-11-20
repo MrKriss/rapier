@@ -16,7 +16,7 @@ from collections import Counter, defaultdict
 
 import numpy as np
 
-from release.lib.fileIO import inputfile_check, outputfile_check
+from fileIO import inputfile_check, outputfile_check
 
 
 class CDHIT_ClusteringClass(object):

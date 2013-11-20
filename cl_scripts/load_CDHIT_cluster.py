@@ -13,7 +13,7 @@ import argparse
 
 import _addpaths
 
-from rapier.lib.reads_db import Reads_db
+from reads_db import Reads_db
 
 if __name__ == '__main__':
     

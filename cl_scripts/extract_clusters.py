@@ -10,7 +10,7 @@ import sys
 import time
 import argparse
 
-from release.lib.reads_db import Reads_db
+from reads_db import Reads_db
   
 if __name__ == '__main__':
     
