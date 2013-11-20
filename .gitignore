@@ -1,0 +1,8 @@
+.DS_Store
+.pydevproject
+/testData/*
+/utils/*.pyc
+*.pyc
+.project
+.idea/*
+.idea/

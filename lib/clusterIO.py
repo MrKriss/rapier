@@ -40,14 +40,10 @@ from StringIO import StringIO
 
 import pandas as pd
 
-from Bio.Align.Applications import MuscleCommandline
 from Bio.SeqRecord import SeqRecord
 from Bio.Seq import Seq
 from Bio import AlignIO, SeqIO
 import numpy as np
-import sys
-
-
 
 
 class ClusterObj(object):

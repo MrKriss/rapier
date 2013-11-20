@@ -1,10 +1,10 @@
-'''
+"""
 Created on 19 Mar 2013
 
 class to interface with a sqlite database
 
 @author: musselle
-'''
+"""
 import os
 import sys
 import cPickle as pkl
@@ -17,7 +17,6 @@ import numpy as np
 from Bio import SeqIO
 
 import sqlite3
-from utils.general_utilities import set_trace, get_path_prefix
 
 
 class SQLdatabase(object):

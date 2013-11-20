@@ -1,8 +1,8 @@
-'''
+"""
 Created on Oct 9, 2012
 
 @author: chris
-'''
+"""
 
 from Bio import SeqIO
 import numpy as np
@@ -12,25 +12,25 @@ import sys
 import matplotlib.pyplot as plt
 from utils import pklsave
 
-from utils import Cycler
+from fileIO import SeqRecCycler
 
 def calc_propN_meanphred(infiles = None, filepattern = '', data_inpath = '', 
                          out_filename='stats', plothist=False, png_filename=''):
-    ''' Calculate the proportion of Ns and the mean Phred scores per read for
-    the files given. 
-    the files given.     
-    
+    """ Calculate the proportion of Ns and the mean Phred scores per read for
+    the files given.
+    the files given.
+
     OPTIONS
-    OPTIONS    
+    OPTIONS
     - out_filename --> name of .npy file for output
     - plothist -->  if ture plots the histogram to screen.
     - png_filename  -->  saves figure of histogram to file.
-    - 
-    No longer returns stats obj, as too much mem usage. Now just writes to .npy file 
-    
-    '''
+    -
+    No longer returns stats obj, as too much mem usage. Now just writes to .npy file
 
-    RecCycler = Cycler(infiles = infiles, filepattern = filepattern, data_inpath = data_inpath)
+    """
+
+    RecCycler = SeqRecCycler(infiles = infiles, filepattern = filepattern, data_inpath = data_inpath)
     
     print '\nCalculating Proportion of Ns and Mean Phred Score per read.\n'
     
@@ -143,7 +143,7 @@ def calc_readlengths(infiles = None, filepattern = '', data_inpath = '',
     '''     
     
     #Generator for Sequence Record files
-    RecCycler = Cycler(infiles = infiles, filepattern = filepattern, data_inpath = data_inpath)
+    RecCycler = SeqRecCycler(infiles = infiles, filepattern = filepattern, data_inpath = data_inpath)
     
     print '\nCalculating length per read ...\n'
     
@@ -232,7 +232,7 @@ def calc_phredperbase_boxplot(infiles = None, filepattern = '', data_inpath = ''
     Counter dictionary may become standard way to store mass Phred/seq bases data.  '''
     from collections import Counter
 
-    RecCycler = Cycler(infiles = infiles, filepattern = filepattern, data_inpath = data_inpath)
+    RecCycler = SeqRecCycler(infiles = infiles, filepattern = filepattern, data_inpath = data_inpath)
     
     print '\nCalculating Box plot stats of phred scores per base position.\n'
     
@@ -394,7 +394,7 @@ def getMeanPhredPerBase(infiles = None, filepattern = '', data_inpath = ''):
     ''' Find the mean Phred score per base '''
         
     #Generator for Sequence Records
-    RecCycler = Cycler(infiles = infiles, filepattern = filepattern, data_inpath = data_inpath)
+    RecCycler = SeqRecCycler(infiles = infiles, filepattern = filepattern, data_inpath = data_inpath)
     
     print '\nCalculating mean phred score per base position.\n'
 

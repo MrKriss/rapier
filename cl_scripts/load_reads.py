@@ -8,7 +8,9 @@ import sys
 import argparse
 import time
 
-from release.lib.reads_db import Reads_db
+import _addpaths
+
+from rapier.lib.reads_db import Reads_db
 
 # Load in data to SQLite database 
 parser = argparse.ArgumentParser(description='Filter and clean up FastQ files.')

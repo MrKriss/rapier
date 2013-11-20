@@ -11,8 +11,9 @@ import sys
 import time
 import argparse
 
-from release.lib.reads_db import Reads_db
+import _addpaths
 
+from rapier.lib.reads_db import Reads_db
 
 if __name__ == '__main__':
     

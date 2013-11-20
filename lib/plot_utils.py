@@ -9,8 +9,6 @@ import os
 import numpy as np 
 import matplotlib.pyplot as plt 
 
-from general_utilities import set_trace
-
 from collections import Counter, defaultdict
 
 def cluster_summary_plot(infile, cluster_length_bins=None, mincutoff=10, bins=5000, report=True, plot_hist=True):
