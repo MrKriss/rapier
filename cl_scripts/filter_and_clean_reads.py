@@ -460,7 +460,7 @@ if __name__ == '__main__':
     # Cleanup parameters
     parser.add_argument('-r', dest='overhang_idx', type=int,
                         help=('Number of bases in cutsite that make up the overhang. Reads are filtered out which'
-                              'have errors in the overhang of the cut site.'))
+                              'have any errors in the overhang of the cut site.'))
 
     parser.add_argument('-g', dest='err_correct', type=int,
                         help='Max edit distance that is corrected between target MIDtag/cutsite and actual read.'

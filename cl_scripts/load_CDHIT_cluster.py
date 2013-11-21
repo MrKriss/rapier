@@ -47,8 +47,7 @@ if __name__ == '__main__':
     
     parser.add_argument('--skipsort',  dest='skipsort', action = 'store_true',
                         help='Skip sorting the cluster file. Useful if file has already been previously sorted.')
-    
-    print sys.argv
+
     args = parser.parse_args()
     
     if os.path.exists(args.output):

@@ -10,6 +10,8 @@ import sys
 import time
 import argparse
 
+import _addpaths
+
 from reads_db import Reads_db
   
 if __name__ == '__main__':
@@ -38,15 +40,14 @@ if __name__ == '__main__':
                         default='fasta',
                         help='Format of file written to output.')    
     
-    parser.add_argument('-b',  dest='rowbuffer', 
+    parser.add_argument('-b',  dest='rowbuffer',
                         default=100000,
-                        help='Number of records to read before writing to file.')    
+                        help='Read write buffer. Number of records to read before writing to file.')
     
     parser.add_argument('-F',  dest='overwrite', 
                         default=False,
                         help='Overwrite any file with same name as output.')    
-    
-    print sys.argv
+
     args = parser.parse_args()
     
     # Write records to output
