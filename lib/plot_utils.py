@@ -11,6 +11,7 @@ import matplotlib.pyplot as plt
 
 from collections import Counter, defaultdict
 
+
 def cluster_summary_plot(infile, cluster_length_bins=None, mincutoff=10, bins=5000, report=True, plot_hist=True):
     ''' Takes cluster file output by CD-Hit and produces a histergram plot
     
